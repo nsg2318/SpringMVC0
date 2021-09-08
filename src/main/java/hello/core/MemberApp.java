@@ -9,7 +9,9 @@ public class MemberApp {
 
     //순수한 자바 메서드의 테스트코드 스프링 관련 X
     public static void main(String[] args) {
-        MemberService memberService = new MemberServiceImpl();
+        AppConfig appConfig = new AppConfig();
+        MemberService memberService = appConfig.memberService();
+//        MemberService memberService = new MemberServiceImpl();
         Member member1 = new Member(1L, "MemberA", Grade.VIP);
         memberService.join(member1);
 
