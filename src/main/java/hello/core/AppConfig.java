@@ -18,6 +18,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AppConfig {
 
+    //@Configuration과 싱글톤 중...  @Bean memberService -> new MemoryMemberRepoistory()
+
+
     @Bean
     public MemberRepository memberRepository() {
         return new MemoryMemberRepository();
