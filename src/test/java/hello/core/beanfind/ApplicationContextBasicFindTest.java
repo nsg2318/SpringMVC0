@@ -46,8 +46,9 @@ public class ApplicationContextBasicFindTest {
                     () -> ac.getBean("xxxxx", MemberService.class));
     }
 
-    Object method() {
-       return ac.getBean("xxxxx", MemberService.class);
-    }
+//    난 람다식을 얘로 바꿔도 되야한다고 생각한다.
+//    Object method() {
+//       return ac.getBean("xxxxx", MemberService.class);
+//    }
 
 }
